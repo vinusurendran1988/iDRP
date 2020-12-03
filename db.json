@@ -20,5 +20,17 @@
         "description": ""
       }
     ]
+  },
+  "apps": {
+    "footer": [
+      {
+        "location": "home",
+        "isEnabled": true
+      },
+      {
+        "location": "search_result",
+        "isEnabled": false
+      }
+    ]
   }
 }
