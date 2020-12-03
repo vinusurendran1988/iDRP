@@ -1,14 +1,24 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+  "configuration": {
+    "navigation_sequence": [
+      {
+        "order": "1",
+        "route_path": "search_result",
+        "name": "",
+        "description": ""
+      },
+      {
+        "order": "2",
+        "route_path": "passenger",
+        "name": "",
+        "description": ""
+      },
+      {
+        "order": "3",
+        "route_path": "ancillary",
+        "name": "",
+        "description": ""
+      }
+    ]
   }
 }
