@@ -22,7 +22,7 @@
     ],
     "apps": {
       "footer": {
-        "isEnabled": "false"
+        "isEnabled": false
       }
     } 
   }
