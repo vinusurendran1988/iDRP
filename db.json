@@ -23,6 +23,9 @@
     "apps": {
       "footer": {
         "isEnabled": true
+      },
+      "header": {
+        "isEnabled": false
       }
     } 
   }
