@@ -28,5 +28,8 @@
         "isEnabled": false
       }
     } 
+  },
+  "test": {
+    "message": "Hello User"
   }
 }
