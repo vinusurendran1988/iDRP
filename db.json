@@ -1,17 +1,1153 @@
 {
-    "stage1": {
-      "test": {
-        "name": "flight only"
-      }
+  "stage1": {
+    "cartItems": {
+      "selectedOffer": [
+        {
+          "offerRefID": "S01", //offer.offerid
+          "ownerCode": "AB", //Need to be set from transalation layer
+          "offerType": "Service", //Need to be set from transalation layer
+          "offerCartID": 101, //May be from service list API
+          "selectedFlight": {
+            "flightSegmentList": {
+              "flightSegment": [
+                {
+                  "flightSegmentID": "1",
+                  "paxJourneyRefID": "502",
+                  "dep": {
+                    "timeZone": "GMT+01:00",
+                    "aircraftScheduledDateTime": "2021-01-25T00:00:00Z",
+                    "IATALocationCode": "FRA"
+                  },
+                  "arrival": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-25T05:00:00Z",
+                    "IATALocationCode": "ADB"
+                  },
+                  "flightInfo": {
+                    "carrierCode": "AB",
+                    "flightNumber": "160",
+                    "flightSuffix": "*",
+                    "flightStatus": "OPEN",
+                    "cabinTypeName": "ECONOMY",
+                    "fareBasisCode": "D"
+                  }
+                },
+                {
+                  "flightSegmentID": "2",
+                  "paxJourneyRefID": "502",
+                  "dep": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-25T06:00:00Z",
+                    "IATALocationCode": "ADB"
+                  },
+                  "arrival": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-25T12:00:00Z",
+                    "IATALocationCode": "AYT"
+                  },
+                  "flightInfo": {
+                    "carrierCode": "AB",
+                    "flightNumber": "161",
+                    "flightSuffix": "*",
+                    "flightStatus": "OPEN",
+                    "cabinTypeName": "ECONOMY",
+                    "fareBasisCode": "K"
+                  }
+                },
+                {
+                  "flightSegmentID": "3",
+                  "paxJourneyRefID": "503",
+                  "dep": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-30T00:00:00Z",
+                    "IATALocationCode": "AYT"
+                  },
+                  "arrival": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-30T09:00:00Z",
+                    "IATALocationCode": "ADB"
+                  },
+                  "flightInfo": {
+                    "carrierCode": "AB",
+                    "flightNumber": "9194",
+                    "flightSuffix": "*",
+                    "flightStatus": "OPEN",
+                    "cabinTypeName": "ECONOMY",
+                    "fareBasisCode": "A1"
+                  }
+                },
+                {
+                  "flightSegmentID": "4",
+                  "paxJourneyRefID": "503",
+                  "dep": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-30T12:00:00Z",
+                    "IATALocationCode": "ADB"
+                  },
+                  "arrival": {
+                    "timeZone": "GMT+01:00",
+                    "aircraftScheduledDateTime": "2021-01-30T15:00:00Z",
+                    "IATALocationCode": "FRA"
+                  },
+                  "flightInfo": {
+                    "carrierCode": "AB",
+                    "flightNumber": "101",
+                    "flightSuffix": "*",
+                    "flightStatus": "OPEN",
+                    "cabinTypeName": "ECONOMY",
+                    "fareBasisCode": "D"
+                  }
+                }
+              ]
+            }
+          },
+          "selectedOfferItem": [],
+          "totalOfferPriceAmount": {
+            "curCode": "EUR",
+            "value": 75.52
+          }
+        }
+      ]
     },
-    "stage2": {
-      "test": {
-        "name": "flight & ancillary"
-      }
-    },
-    "stage3": {
-      "test": {
-        "name": "flight & seat & ancillary"
+    "dataLists": {
+      "originDestList": {
+        "originDest": [
+          {
+            "originCode": "FRA",
+            "destCode": "AYT",
+            "paxJourneyRefID": "502"
+          },
+          {
+            "originCode": "AYT",
+            "destCode": "FRA",
+            "paxJourneyRefID": "503"
+          }
+        ]
+      },
+      "flightSegmentList": {
+        "flightSegment": [
+          {
+            "flightSegmentID": "1",
+            "paxJourneyRefID": "502",
+            "dep": {
+              "timeZone": "GMT+01:00",
+              "aircraftScheduledDateTime": "2021-01-25T00:00:00Z",
+              "IATALocationCode": "FRA"
+            },
+            "arrival": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-25T05:00:00Z",
+              "IATALocationCode": "ADB"
+            },
+            "flightInfo": {
+              "carrierCode": "AB",
+              "flightNumber": "160",
+              "flightSuffix": "*",
+              "flightStatus": "OPEN",
+              "cabinTypeName": "ECONOMY",
+              "fareBasisCode": "D"
+            }
+          },
+          {
+            "flightSegmentID": "2",
+            "paxJourneyRefID": "502",
+            "dep": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-25T06:00:00Z",
+              "IATALocationCode": "ADB"
+            },
+            "arrival": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-25T12:00:00Z",
+              "IATALocationCode": "AYT"
+            },
+            "flightInfo": {
+              "carrierCode": "AB",
+              "flightNumber": "161",
+              "flightSuffix": "*",
+              "flightStatus": "OPEN",
+              "cabinTypeName": "ECONOMY",
+              "fareBasisCode": "K"
+            }
+          },
+          {
+            "flightSegmentID": "3",
+            "paxJourneyRefID": "503",
+            "dep": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-30T00:00:00Z",
+              "IATALocationCode": "AYT"
+            },
+            "arrival": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-30T09:00:00Z",
+              "IATALocationCode": "ADB"
+            },
+            "flightInfo": {
+              "carrierCode": "AB",
+              "flightNumber": "9194",
+              "flightSuffix": "*",
+              "flightStatus": "OPEN",
+              "cabinTypeName": "ECONOMY",
+              "fareBasisCode": "A1"
+            }
+          },
+          {
+            "flightSegmentID": "4",
+            "paxJourneyRefID": "503",
+            "dep": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-30T12:00:00Z",
+              "IATALocationCode": "ADB"
+            },
+            "arrival": {
+              "timeZone": "GMT+01:00",
+              "aircraftScheduledDateTime": "2021-01-30T15:00:00Z",
+              "IATALocationCode": "FRA"
+            },
+            "flightInfo": {
+              "carrierCode": "AB",
+              "flightNumber": "101",
+              "flightSuffix": "*",
+              "flightStatus": "OPEN",
+              "cabinTypeName": "ECONOMY",
+              "fareBasisCode": "D"
+            }
+          }
+        ]
+      },
+      "passengerList": {
+        "passenger": [
+          {
+            "paxID": "PX1",
+            "paxType": "ADT",
+            "paxLead": "true",
+            "paxInfo": {
+              "titleName": "Mr.",
+              "givenName": "Mark",
+              "middleName": "Alias",
+              "surname": "Spencer",
+              "suffixName": "Jr.",
+              "birthDate": "03-10-1994",
+              "genderCode": "M",
+              "emailAddress": "j.smithas@mail.com"
+            }
+          },
+          {
+            "paxID": "PX2",
+            "paxType": "ADT",
+            "paxLead": "false",
+            "paxInfo": {
+              "titleName": "Ms.",
+              "givenName": "Carol",
+              "middleName": "",
+              "surname": "Johns",
+              "suffixName": "",
+              "birthDate": "10-27-1996",
+              "genderCode": "F",
+              "emailAddress": "j.smithas@mail.com"
+            }
+          }
+        ]
+      },
+      "providerData": {
+        "baggageDetails": [
+          {
+            "serviceListItemID": "SL30",
+            "excessWeight": 0
+          },
+          {
+            "serviceListItemID": "SL31",
+            "excessWeight": 5
+          },
+          {
+            "serviceListItemID": "SL32",
+            "excessWeight": 10
+          }
+        ]
       }
     }
+  },
+  "stage2": {
+    "cartItems": {
+      "selectedOffer": [
+        {
+          "offerRefID": "S01", //offer.offerid
+          "ownerCode": "AB", //Need to be set from transalation layer
+          "offerType": "Service", //Need to be set from transalation layer
+          "offerCartID": 101, //May be from service list API
+          "selectedFlight": {
+            "flightSegmentList": {
+              "flightSegment": [
+                {
+                  "flightSegmentID": "1",
+                  "paxJourneyRefID": "502",
+                  "dep": {
+                    "timeZone": "GMT+01:00",
+                    "aircraftScheduledDateTime": "2021-01-25T00:00:00Z",
+                    "IATALocationCode": "FRA"
+                  },
+                  "arrival": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-25T05:00:00Z",
+                    "IATALocationCode": "ADB"
+                  },
+                  "flightInfo": {
+                    "carrierCode": "AB",
+                    "flightNumber": "160",
+                    "flightSuffix": "*",
+                    "flightStatus": "OPEN",
+                    "cabinTypeName": "ECONOMY",
+                    "fareBasisCode": "D"
+                  }
+                },
+                {
+                  "flightSegmentID": "2",
+                  "paxJourneyRefID": "502",
+                  "dep": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-25T06:00:00Z",
+                    "IATALocationCode": "ADB"
+                  },
+                  "arrival": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-25T12:00:00Z",
+                    "IATALocationCode": "AYT"
+                  },
+                  "flightInfo": {
+                    "carrierCode": "AB",
+                    "flightNumber": "161",
+                    "flightSuffix": "*",
+                    "flightStatus": "OPEN",
+                    "cabinTypeName": "ECONOMY",
+                    "fareBasisCode": "K"
+                  }
+                },
+                {
+                  "flightSegmentID": "3",
+                  "paxJourneyRefID": "503",
+                  "dep": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-30T00:00:00Z",
+                    "IATALocationCode": "AYT"
+                  },
+                  "arrival": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-30T09:00:00Z",
+                    "IATALocationCode": "ADB"
+                  },
+                  "flightInfo": {
+                    "carrierCode": "AB",
+                    "flightNumber": "9194",
+                    "flightSuffix": "*",
+                    "flightStatus": "OPEN",
+                    "cabinTypeName": "ECONOMY",
+                    "fareBasisCode": "A1"
+                  }
+                },
+                {
+                  "flightSegmentID": "4",
+                  "paxJourneyRefID": "503",
+                  "dep": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-30T12:00:00Z",
+                    "IATALocationCode": "ADB"
+                  },
+                  "arrival": {
+                    "timeZone": "GMT+01:00",
+                    "aircraftScheduledDateTime": "2021-01-30T15:00:00Z",
+                    "IATALocationCode": "FRA"
+                  },
+                  "flightInfo": {
+                    "carrierCode": "AB",
+                    "flightNumber": "101",
+                    "flightSuffix": "*",
+                    "flightStatus": "OPEN",
+                    "cabinTypeName": "ECONOMY",
+                    "fareBasisCode": "D"
+                  }
+                }
+              ]
+            }
+          },
+          "selectedOfferItem": [
+            {
+              "offerItemRefID": "SL30", //offer.slice.flightSegment.services.offerItemId
+              "offerItemCartID": 1, //?
+              "paxRefID": "pax1", //offer.slice.flightSegment.services.passengerId
+              "selectedAlaCarteOfferItem": {
+                "serviceCode": "XBAG", //offer.slice.flightSegment.services.serviceCode
+                "serviceName": "Excess Baggage", //offer.slice.flightSegment.services.serviceName
+                "serviceCategory": "BAGGAGE", //offer.slice.flightSegment.services.serviceCategory
+                "RFICCode": "C", //offer.slice.flightSegment.services.RFICCode
+                "RFICSubCode": "0CZ", //offer.slice.flightSegment.services.RFICSubCode
+                "flightAssociations": { //Baggages are applicable at slice level, hence have this service under offer.slice.services
+                  "flightSegmentRefID": [
+                    "1",
+                    "2"
+                  ]
+                },
+                "bagItemDetails": {
+                  "typeCode": "Checked", //offer.slice.services.baggageInfo.typeCode
+                  "baggageType": "Baggage", //offer.slice.services.baggageInfo.baggageType
+                  "pieceAllowance": {
+                    "maximumWeightMeasure": {
+                      "unitCode": "kg", //offer.slice.services.baggageInfo.weightUnit
+                      "value": 20 //offer.slice.services.baggageInfo.excessWeight
+                    }
+                  }
+                },
+                "qty": 1 //offer.slice.flightSegment.services.
+              },
+              "price": {
+                "baseAmount": {
+                  "curCode": "EUR", //offer.slice.services.feeInformation.currencyCode or //offer.slice.flightSegment.services.feeInformation.currencyCode
+                  "value": 30.00 //offer.slice.services.feeInformation.feeAmount or //offer.slice.flightSegment.services.feeInformation.feeAmount
+                },
+                "taxSummary": {
+                  "tax": [
+                    {
+                      "taxAmount": {
+                        "curCode": "EUR", //offer.slice.services.feeInformation.taxBreakup.currencyCode
+                        "value": 5.1 //offer.slice.services.feeInformation.taxBreakup.amount
+                      },
+                      "taxCode": "VT", //offer.slice.services.feeInformation.taxBreakup.taxCode
+                      "taxName": "VAT", //offer.slice.services.feeInformation.taxBreakup.VAT
+                      "taxTypeCode": "Applied" //offer.slice.services.feeInformation.taxBreakup.taxTypeCode
+                    },
+                    {
+                      "taxAmount": {
+                        "curCode": "EUR",
+                        "value": 0.0
+                      },
+                      "taxCode": "YC",
+                      "taxName": "Customs tax",
+                      "taxTypeCode": "Applied"
+                    }
+                  ]
+                },
+                "totalAmount": {
+                  "curCode": "EUR",
+                  "value": 35.10 //offer.slice.services.feeInformation.taxAmount or //offer.slice.flightSegment.services.feeInformation.taxAmount
+                }
+              }
+            },
+            {
+              "offerItemRefID": "SL30",
+              "offerItemCartID": 2,
+              "paxRefID": "pax2",
+              "selectedAlaCarteOfferItem": {
+                "serviceCode": "XBAG",
+                "serviceName": "Excess Baggage",
+                "serviceCategory": "BAGGAGE",
+                "RFICCode": "C",
+                "RFICSubCode": "0CZ",
+                "flightAssociations": {
+                  "flightSegmentRefID": [
+                    "1",
+                    "2"
+                  ]
+                },
+                "bagItemDetails": {
+                  "typeCode": "Checked",
+                  "baggageType": "Baggage",
+                  "pieceAllowance": {
+                    "maximumWeightMeasure": {
+                      "unitCode": "kg",
+                      "value": 20
+                    }
+                  }
+                },
+                "qty": 2
+              },
+              "price": {
+                "baseAmount": {
+                  "curCode": "EUR",
+                  "value": 30.00
+                },
+                "taxSummary": {
+                  "tax": [
+                    {
+                      "taxAmount": {
+                        "curCode": "EUR",
+                        "value": 5.1
+                      },
+                      "taxCode": "VT",
+                      "taxName": "VAT",
+                      "taxTypeCode": "Applied"
+                    },
+                    {
+                      "taxAmount": {
+                        "curCode": "EUR",
+                        "value": 0.0
+                      },
+                      "taxCode": "YC",
+                      "taxName": "Customs tax",
+                      "taxTypeCode": "Applied"
+                    }
+                  ]
+                },
+                "totalAmount": {
+                  "curCode": "EUR",
+                  "value": 70.20
+                }
+              }
+            }
+          ],
+          "totalOfferPriceAmount": {
+            "curCode": "EUR",
+            "value": 105.52
+          }
+        }
+      ]
+    },
+    "dataLists": {
+      "originDestList": {
+        "originDest": [
+          {
+            "originCode": "FRA",
+            "destCode": "AYT",
+            "paxJourneyRefID": "502"
+          },
+          {
+            "originCode": "AYT",
+            "destCode": "FRA",
+            "paxJourneyRefID": "503"
+          }
+        ]
+      },
+      "flightSegmentList": {
+        "flightSegment": [
+          {
+            "flightSegmentID": "1",
+            "paxJourneyRefID": "502",
+            "dep": {
+              "timeZone": "GMT+01:00",
+              "aircraftScheduledDateTime": "2021-01-25T00:00:00Z",
+              "IATALocationCode": "FRA"
+            },
+            "arrival": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-25T05:00:00Z",
+              "IATALocationCode": "ADB"
+            },
+            "flightInfo": {
+              "carrierCode": "AB",
+              "flightNumber": "160",
+              "flightSuffix": "*",
+              "flightStatus": "OPEN",
+              "cabinTypeName": "ECONOMY",
+              "fareBasisCode": "D"
+            }
+          },
+          {
+            "flightSegmentID": "2",
+            "paxJourneyRefID": "502",
+            "dep": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-25T06:00:00Z",
+              "IATALocationCode": "ADB"
+            },
+            "arrival": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-25T12:00:00Z",
+              "IATALocationCode": "AYT"
+            },
+            "flightInfo": {
+              "carrierCode": "AB",
+              "flightNumber": "161",
+              "flightSuffix": "*",
+              "flightStatus": "OPEN",
+              "cabinTypeName": "ECONOMY",
+              "fareBasisCode": "K"
+            }
+          },
+          {
+            "flightSegmentID": "3",
+            "paxJourneyRefID": "503",
+            "dep": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-30T00:00:00Z",
+              "IATALocationCode": "AYT"
+            },
+            "arrival": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-30T09:00:00Z",
+              "IATALocationCode": "ADB"
+            },
+            "flightInfo": {
+              "carrierCode": "AB",
+              "flightNumber": "9194",
+              "flightSuffix": "*",
+              "flightStatus": "OPEN",
+              "cabinTypeName": "ECONOMY",
+              "fareBasisCode": "A1"
+            }
+          },
+          {
+            "flightSegmentID": "4",
+            "paxJourneyRefID": "503",
+            "dep": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-30T12:00:00Z",
+              "IATALocationCode": "ADB"
+            },
+            "arrival": {
+              "timeZone": "GMT+01:00",
+              "aircraftScheduledDateTime": "2021-01-30T15:00:00Z",
+              "IATALocationCode": "FRA"
+            },
+            "flightInfo": {
+              "carrierCode": "AB",
+              "flightNumber": "101",
+              "flightSuffix": "*",
+              "flightStatus": "OPEN",
+              "cabinTypeName": "ECONOMY",
+              "fareBasisCode": "D"
+            }
+          }
+        ]
+      },
+      "passengerList": {
+        "passenger": [
+          {
+            "paxID": "PX1",
+            "paxType": "ADT",
+            "paxLead": "true",
+            "paxInfo": {
+              "titleName": "Mr.",
+              "givenName": "Mark",
+              "middleName": "Alias",
+              "surname": "Spencer",
+              "suffixName": "Jr.",
+              "birthDate": "03-10-1994",
+              "genderCode": "M",
+              "emailAddress": "j.smithas@mail.com"
+            }
+          },
+          {
+            "paxID": "PX2",
+            "paxType": "ADT",
+            "paxLead": "false",
+            "paxInfo": {
+              "titleName": "Ms.",
+              "givenName": "Carol",
+              "middleName": "",
+              "surname": "Johns",
+              "suffixName": "",
+              "birthDate": "10-27-1996",
+              "genderCode": "F",
+              "emailAddress": "j.smithas@mail.com"
+            }
+          }
+        ]
+      },
+      "providerData": {
+        "baggageDetails": [
+          {
+            "serviceListItemID": "SL30",
+            "excessWeight": 0
+          },
+          {
+            "serviceListItemID": "SL31",
+            "excessWeight": 5
+          },
+          {
+            "serviceListItemID": "SL32",
+            "excessWeight": 10
+          }
+        ]
+      }
+    }
+  },
+  "stage3": {
+    "cartItems": {
+      "selectedOffer": [
+        {
+          "offerRefID": "S01", //offer.offerid
+          "ownerCode": "AB", //Need to be set from transalation layer
+          "offerType": "Service", //Need to be set from transalation layer
+          "offerCartID": 101, //May be from service list API
+          "selectedFlight": {
+            "flightSegmentList": {
+              "flightSegment": [
+                {
+                  "flightSegmentID": "1",
+                  "paxJourneyRefID": "502",
+                  "dep": {
+                    "timeZone": "GMT+01:00",
+                    "aircraftScheduledDateTime": "2021-01-25T00:00:00Z",
+                    "IATALocationCode": "FRA"
+                  },
+                  "arrival": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-25T05:00:00Z",
+                    "IATALocationCode": "ADB"
+                  },
+                  "flightInfo": {
+                    "carrierCode": "AB",
+                    "flightNumber": "160",
+                    "flightSuffix": "*",
+                    "flightStatus": "OPEN",
+                    "cabinTypeName": "ECONOMY",
+                    "fareBasisCode": "D"
+                  }
+                },
+                {
+                  "flightSegmentID": "2",
+                  "paxJourneyRefID": "502",
+                  "dep": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-25T06:00:00Z",
+                    "IATALocationCode": "ADB"
+                  },
+                  "arrival": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-25T12:00:00Z",
+                    "IATALocationCode": "AYT"
+                  },
+                  "flightInfo": {
+                    "carrierCode": "AB",
+                    "flightNumber": "161",
+                    "flightSuffix": "*",
+                    "flightStatus": "OPEN",
+                    "cabinTypeName": "ECONOMY",
+                    "fareBasisCode": "K"
+                  }
+                },
+                {
+                  "flightSegmentID": "3",
+                  "paxJourneyRefID": "503",
+                  "dep": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-30T00:00:00Z",
+                    "IATALocationCode": "AYT"
+                  },
+                  "arrival": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-30T09:00:00Z",
+                    "IATALocationCode": "ADB"
+                  },
+                  "flightInfo": {
+                    "carrierCode": "AB",
+                    "flightNumber": "9194",
+                    "flightSuffix": "*",
+                    "flightStatus": "OPEN",
+                    "cabinTypeName": "ECONOMY",
+                    "fareBasisCode": "A1"
+                  }
+                },
+                {
+                  "flightSegmentID": "4",
+                  "paxJourneyRefID": "503",
+                  "dep": {
+                    "timeZone": "GMT+03:00",
+                    "aircraftScheduledDateTime": "2021-01-30T12:00:00Z",
+                    "IATALocationCode": "ADB"
+                  },
+                  "arrival": {
+                    "timeZone": "GMT+01:00",
+                    "aircraftScheduledDateTime": "2021-01-30T15:00:00Z",
+                    "IATALocationCode": "FRA"
+                  },
+                  "flightInfo": {
+                    "carrierCode": "AB",
+                    "flightNumber": "101",
+                    "flightSuffix": "*",
+                    "flightStatus": "OPEN",
+                    "cabinTypeName": "ECONOMY",
+                    "fareBasisCode": "D"
+                  }
+                }
+              ]
+            }
+          },
+          "selectedOfferItem": [
+            {
+              "offerItemRefID": "SL30", //offer.slice.flightSegment.services.offerItemId
+              "offerItemCartID": 1, //?
+              "paxRefID": "pax1", //offer.slice.flightSegment.services.passengerId
+              "selectedAlaCarteOfferItem": {
+                "serviceCode": "XBAG", //offer.slice.flightSegment.services.serviceCode
+                "serviceName": "Excess Baggage", //offer.slice.flightSegment.services.serviceName
+                "serviceCategory": "BAGGAGE", //offer.slice.flightSegment.services.serviceCategory
+                "RFICCode": "C", //offer.slice.flightSegment.services.RFICCode
+                "RFICSubCode": "0CZ", //offer.slice.flightSegment.services.RFICSubCode
+                "flightAssociations": { //Baggages are applicable at slice level, hence have this service under offer.slice.services
+                  "flightSegmentRefID": [
+                    "1",
+                    "2"
+                  ]
+                },
+                "bagItemDetails": {
+                  "typeCode": "Checked", //offer.slice.services.baggageInfo.typeCode
+                  "baggageType": "Baggage", //offer.slice.services.baggageInfo.baggageType
+                  "pieceAllowance": {
+                    "maximumWeightMeasure": {
+                      "unitCode": "kg", //offer.slice.services.baggageInfo.weightUnit
+                      "value": 20 //offer.slice.services.baggageInfo.excessWeight
+                    }
+                  }
+                },
+                "qty": 1 //offer.slice.flightSegment.services.
+              },
+              "price": {
+                "baseAmount": {
+                  "curCode": "EUR", //offer.slice.services.feeInformation.currencyCode or //offer.slice.flightSegment.services.feeInformation.currencyCode
+                  "value": 30.00 //offer.slice.services.feeInformation.feeAmount or //offer.slice.flightSegment.services.feeInformation.feeAmount
+                },
+                "taxSummary": {
+                  "tax": [
+                    {
+                      "taxAmount": {
+                        "curCode": "EUR", //offer.slice.services.feeInformation.taxBreakup.currencyCode
+                        "value": 5.1 //offer.slice.services.feeInformation.taxBreakup.amount
+                      },
+                      "taxCode": "VT", //offer.slice.services.feeInformation.taxBreakup.taxCode
+                      "taxName": "VAT", //offer.slice.services.feeInformation.taxBreakup.VAT
+                      "taxTypeCode": "Applied" //offer.slice.services.feeInformation.taxBreakup.taxTypeCode
+                    },
+                    {
+                      "taxAmount": {
+                        "curCode": "EUR",
+                        "value": 0.0
+                      },
+                      "taxCode": "YC",
+                      "taxName": "Customs tax",
+                      "taxTypeCode": "Applied"
+                    }
+                  ]
+                },
+                "totalAmount": {
+                  "curCode": "EUR",
+                  "value": 35.10 //offer.slice.services.feeInformation.taxAmount or //offer.slice.flightSegment.services.feeInformation.taxAmount
+                }
+              }
+            },
+            {
+              "offerItemRefID": "SL30",
+              "offerItemCartID": 2,
+              "paxRefID": "pax2",
+              "selectedAlaCarteOfferItem": {
+                "serviceCode": "XBAG",
+                "serviceName": "Excess Baggage",
+                "serviceCategory": "BAGGAGE",
+                "RFICCode": "C",
+                "RFICSubCode": "0CZ",
+                "flightAssociations": {
+                  "flightSegmentRefID": [
+                    "1",
+                    "2"
+                  ]
+                },
+                "bagItemDetails": {
+                  "typeCode": "Checked",
+                  "baggageType": "Baggage",
+                  "pieceAllowance": {
+                    "maximumWeightMeasure": {
+                      "unitCode": "kg",
+                      "value": 20
+                    }
+                  }
+                },
+                "qty": 2
+              },
+              "price": {
+                "baseAmount": {
+                  "curCode": "EUR",
+                  "value": 30.00
+                },
+                "taxSummary": {
+                  "tax": [
+                    {
+                      "taxAmount": {
+                        "curCode": "EUR",
+                        "value": 5.1
+                      },
+                      "taxCode": "VT",
+                      "taxName": "VAT",
+                      "taxTypeCode": "Applied"
+                    },
+                    {
+                      "taxAmount": {
+                        "curCode": "EUR",
+                        "value": 0.0
+                      },
+                      "taxCode": "YC",
+                      "taxName": "Customs tax",
+                      "taxTypeCode": "Applied"
+                    }
+                  ]
+                },
+                "totalAmount": {
+                  "curCode": "EUR",
+                  "value": 70.20
+                }
+              }
+            },
+            {
+              "offerItemRefID": "SL30",
+              "offerItemCartID": 3,
+              "paxRefID": "pax1",
+              "selectedAlaCarteOfferItem": {
+                "serviceCode": "PMIA",
+                "serviceName": "Hot Breakfast and 2 Beverages",
+                "serviceCategory": "MEALS",
+                "flightAssociations": {
+                  "flightSegmentRefID": [
+                    "1",
+                    "2"
+                  ]
+                },
+                "qty": 1
+              },
+              "price": {
+                "baseAmount": {
+                  "curCode": "EUR",
+                  "value": 14.99
+                },
+                "taxSummary": {
+                  "tax": [
+                    {
+                      "taxAmount": {
+                        "curCode": "EUR",
+                        "value": 1.2
+                      },
+                      "taxCode": "VT",
+                      "taxName": "VAT",
+                      "taxTypeCode": "Applied"
+                    },
+                    {
+                      "taxAmount": {
+                        "curCode": "EUR",
+                        "value": 0.0
+                      },
+                      "taxCode": "YC",
+                      "taxName": "Customs tax",
+                      "taxTypeCode": "Applied"
+                    }
+                  ]
+                },
+                "totalAmount": {
+                  "curCode": "EUR",
+                  "value": 15.11
+                }
+              }
+            },
+            {
+              "offerItemRefID": "SL30",
+              "offerItemCartID": 4,
+              "paxRefID": "pax1",
+              "selectedAlaCarteOfferItem": {
+                "serviceCode": "PMIA",
+                "serviceName": "Hot Breakfast and 2 Beverages",
+                "serviceCategory": "MEALS",
+                "flightAssociations": {
+                  "flightSegmentRefID": [
+                    "3",
+                    "4"
+                  ]
+                },
+                "qty": 1
+              },
+              "price": {
+                "baseAmount": {
+                  "curCode": "EUR",
+                  "value": 14.99
+                },
+                "taxSummary": {
+                  "tax": [
+                    {
+                      "taxAmount": {
+                        "curCode": "EUR",
+                        "value": 1.2
+                      },
+                      "taxCode": "VT",
+                      "taxName": "VAT",
+                      "taxTypeCode": "Applied"
+                    },
+                    {
+                      "taxAmount": {
+                        "curCode": "EUR",
+                        "value": 0.0
+                      },
+                      "taxCode": "YC",
+                      "taxName": "Customs tax",
+                      "taxTypeCode": "Applied"
+                    }
+                  ]
+                },
+                "totalAmount": {
+                  "curCode": "EUR",
+                  "value": 15.11
+                }
+              }
+            }
+          ],
+          "totalOfferPriceAmount": {
+            "curCode": "EUR",
+            "value": 135.52
+          }
+        }
+      ]
+    },
+    "dataLists": {
+      "originDestList": {
+        "originDest": [
+          {
+            "originCode": "FRA",
+            "destCode": "AYT",
+            "paxJourneyRefID": "502"
+          },
+          {
+            "originCode": "AYT",
+            "destCode": "FRA",
+            "paxJourneyRefID": "503"
+          }
+        ]
+      },
+      "flightSegmentList": {
+        "flightSegment": [
+          {
+            "flightSegmentID": "1",
+            "paxJourneyRefID": "502",
+            "dep": {
+              "timeZone": "GMT+01:00",
+              "aircraftScheduledDateTime": "2021-01-25T00:00:00Z",
+              "IATALocationCode": "FRA"
+            },
+            "arrival": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-25T05:00:00Z",
+              "IATALocationCode": "ADB"
+            },
+            "flightInfo": {
+              "carrierCode": "AB",
+              "flightNumber": "160",
+              "flightSuffix": "*",
+              "flightStatus": "OPEN",
+              "cabinTypeName": "ECONOMY",
+              "fareBasisCode": "D"
+            }
+          },
+          {
+            "flightSegmentID": "2",
+            "paxJourneyRefID": "502",
+            "dep": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-25T06:00:00Z",
+              "IATALocationCode": "ADB"
+            },
+            "arrival": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-25T12:00:00Z",
+              "IATALocationCode": "AYT"
+            },
+            "flightInfo": {
+              "carrierCode": "AB",
+              "flightNumber": "161",
+              "flightSuffix": "*",
+              "flightStatus": "OPEN",
+              "cabinTypeName": "ECONOMY",
+              "fareBasisCode": "K"
+            }
+          },
+          {
+            "flightSegmentID": "3",
+            "paxJourneyRefID": "503",
+            "dep": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-30T00:00:00Z",
+              "IATALocationCode": "AYT"
+            },
+            "arrival": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-30T09:00:00Z",
+              "IATALocationCode": "ADB"
+            },
+            "flightInfo": {
+              "carrierCode": "AB",
+              "flightNumber": "9194",
+              "flightSuffix": "*",
+              "flightStatus": "OPEN",
+              "cabinTypeName": "ECONOMY",
+              "fareBasisCode": "A1"
+            }
+          },
+          {
+            "flightSegmentID": "4",
+            "paxJourneyRefID": "503",
+            "dep": {
+              "timeZone": "GMT+03:00",
+              "aircraftScheduledDateTime": "2021-01-30T12:00:00Z",
+              "IATALocationCode": "ADB"
+            },
+            "arrival": {
+              "timeZone": "GMT+01:00",
+              "aircraftScheduledDateTime": "2021-01-30T15:00:00Z",
+              "IATALocationCode": "FRA"
+            },
+            "flightInfo": {
+              "carrierCode": "AB",
+              "flightNumber": "101",
+              "flightSuffix": "*",
+              "flightStatus": "OPEN",
+              "cabinTypeName": "ECONOMY",
+              "fareBasisCode": "D"
+            }
+          }
+        ]
+      },
+      "passengerList": {
+        "passenger": [
+          {
+            "paxID": "PX1",
+            "paxType": "ADT",
+            "paxLead": "true",
+            "paxInfo": {
+              "titleName": "Mr.",
+              "givenName": "Mark",
+              "middleName": "Alias",
+              "surname": "Spencer",
+              "suffixName": "Jr.",
+              "birthDate": "03-10-1994",
+              "genderCode": "M",
+              "emailAddress": "j.smithas@mail.com"
+            }
+          },
+          {
+            "paxID": "PX2",
+            "paxType": "ADT",
+            "paxLead": "false",
+            "paxInfo": {
+              "titleName": "Ms.",
+              "givenName": "Carol",
+              "middleName": "",
+              "surname": "Johns",
+              "suffixName": "",
+              "birthDate": "10-27-1996",
+              "genderCode": "F",
+              "emailAddress": "j.smithas@mail.com"
+            }
+          }
+        ]
+      },
+      "providerData": {
+        "baggageDetails": [
+          {
+            "serviceListItemID": "SL30",
+            "excessWeight": 0
+          },
+          {
+            "serviceListItemID": "SL31",
+            "excessWeight": 5
+          },
+          {
+            "serviceListItemID": "SL32",
+            "excessWeight": 10
+          }
+        ]
+      }
+    }
+  }
 }
