@@ -1,5 +1,4 @@
 {
-  "cart":{
     "stage1": {
       "test": {
         "name": "flight only"
@@ -15,5 +14,4 @@
         "name": "flight & seat & ancillary"
       }
     }
-  }
 }
