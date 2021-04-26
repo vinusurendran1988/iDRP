@@ -1,35 +1,19 @@
 {
-  "configuration": {
-    "navigation_sequence": [
-      {
-        "order": "1",
-        "route_path": "search_result",
-        "name": "",
-        "description": ""
-      },
-      {
-        "order": "2",
-        "route_path": "passenger",
-        "name": "",
-        "description": ""
-      },
-      {
-        "order": "3",
-        "route_path": "ancillary",
-        "name": "",
-        "description": ""
+  "cart":{
+    "stage1": {
+      "test": {
+        "name": "flight only"
       }
-    ],
-    "apps": {
-      "footer": {
-        "isEnabled": true
-      },
-      "header": {
-        "isEnabled": false
+    },
+    "stage2": {
+      "test": {
+        "name": "flight & ancillary"
       }
-    } 
-  },
-  "test": {
-    "message": "Hello User"
+    },
+    "stage3": {
+      "test": {
+        "name": "flight & seat & ancillary"
+      }
+    }
   }
 }
